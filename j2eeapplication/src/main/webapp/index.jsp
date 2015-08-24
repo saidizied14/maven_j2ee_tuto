@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Initial project J2EE MAVEN</h1>
+<h1>Initial project J2EE MAVEN 88</h1>
 
 </body>
 </html>
