@@ -1,0 +1,450 @@
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultSaveOrUpdateEventListener  saving transient instance
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  saving [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing insertions
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.WrapVisitor  Wrapped collection in role: dao.Categorie.produits
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing identity-insert immediately
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Inserting entity: dao.Categorie (native id)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     insert into CATEGORIE (CATEGORIE_TITRE, CATEGORIE_DESC, CATEGORIE_DATEAJOUT) values (?, ?, ?)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Dehydrating entity: [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'titre1' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'description1' to parameter: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.type.TimestampType  binding null to parameter: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.id.IdentifierGeneratorFactory  Natively generated identity: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [getTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  commit
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  processing flush-time cascades
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  dirty checking collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushing entities and processing referenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.Collections  Collection found: [dao.Categorie.produits#1], was: [<unreferenced>] (initialized)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Processing unreferenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Scheduling collection removes/(re)creates/updates
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  listing entities:
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Categorie{idCategorie=1, produits=[], description=description1, dateAjout=null, titre=titre1}
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  executing flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush begin
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  Inserting collection: [dao.Categorie.produits#1]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  collection was empty
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush end
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  post flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  committed JDBC Connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  aggressively releasing JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  returning connection to pool, pool size: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  connection already null in cleanup : no action
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  opened session at timestamp: 14410597171
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing method [beginTransaction] in non-transacted context
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  begin
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  opening JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  total checked-out connections: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  using pooled JDBC connection, pool size: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  current autocommit status: false
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction begin
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [save] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultSaveOrUpdateEventListener  saving transient instance
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  saving [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing insertions
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.WrapVisitor  Wrapped collection in role: dao.Categorie.produits
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing identity-insert immediately
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Inserting entity: dao.Categorie (native id)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     insert into CATEGORIE (CATEGORIE_TITRE, CATEGORIE_DESC, CATEGORIE_DATEAJOUT) values (?, ?, ?)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Dehydrating entity: [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'titre2' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'description2' to parameter: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.type.TimestampType  binding null to parameter: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.id.IdentifierGeneratorFactory  Natively generated identity: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [getTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  commit
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  processing flush-time cascades
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  dirty checking collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushing entities and processing referenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.Collections  Collection found: [dao.Categorie.produits#2], was: [<unreferenced>] (initialized)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Processing unreferenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Scheduling collection removes/(re)creates/updates
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  listing entities:
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Categorie{idCategorie=2, produits=[], description=description2, dateAjout=null, titre=titre2}
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  executing flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush begin
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  Inserting collection: [dao.Categorie.produits#2]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  collection was empty
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush end
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  post flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  committed JDBC Connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  aggressively releasing JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  returning connection to pool, pool size: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  connection already null in cleanup : no action
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  opened session at timestamp: 14410597171
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing method [beginTransaction] in non-transacted context
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  begin
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  opening JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  total checked-out connections: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  using pooled JDBC connection, pool size: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  current autocommit status: false
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction begin
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [save] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultSaveOrUpdateEventListener  saving transient instance
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  saving [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing insertions
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.WrapVisitor  Wrapped collection in role: dao.Categorie.produits
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing identity-insert immediately
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Inserting entity: dao.Categorie (native id)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     insert into CATEGORIE (CATEGORIE_TITRE, CATEGORIE_DESC, CATEGORIE_DATEAJOUT) values (?, ?, ?)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Dehydrating entity: [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'titre3' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'description3' to parameter: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.type.TimestampType  binding null to parameter: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.id.IdentifierGeneratorFactory  Natively generated identity: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [getTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  commit
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  processing flush-time cascades
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  dirty checking collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushing entities and processing referenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.Collections  Collection found: [dao.Categorie.produits#3], was: [<unreferenced>] (initialized)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Processing unreferenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Scheduling collection removes/(re)creates/updates
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  listing entities:
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Categorie{idCategorie=3, produits=[], description=description3, dateAjout=null, titre=titre3}
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  executing flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush begin
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  Inserting collection: [dao.Categorie.produits#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  collection was empty
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush end
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  post flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  committed JDBC Connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  aggressively releasing JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  returning connection to pool, pool size: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  connection already null in cleanup : no action
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  opened session at timestamp: 14410597171
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing method [beginTransaction] in non-transacted context
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  begin
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  opening JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  total checked-out connections: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  using pooled JDBC connection, pool size: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  current autocommit status: false
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction begin
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [save] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultSaveOrUpdateEventListener  saving transient instance
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  saving [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing insertions
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.WrapVisitor  Wrapped collection in role: dao.Categorie.produits
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing identity-insert immediately
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Inserting entity: dao.Categorie (native id)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     insert into CATEGORIE (CATEGORIE_TITRE, CATEGORIE_DESC, CATEGORIE_DATEAJOUT) values (?, ?, ?)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Dehydrating entity: [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'titre4' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'description4' to parameter: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.type.TimestampType  binding null to parameter: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.id.IdentifierGeneratorFactory  Natively generated identity: 4
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [getTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  commit
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  processing flush-time cascades
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  dirty checking collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushing entities and processing referenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.Collections  Collection found: [dao.Categorie.produits#4], was: [<unreferenced>] (initialized)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Processing unreferenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Scheduling collection removes/(re)creates/updates
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  listing entities:
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Categorie{idCategorie=4, produits=[], description=description4, dateAjout=null, titre=titre4}
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  executing flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush begin
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  Inserting collection: [dao.Categorie.produits#4]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  collection was empty
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush end
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  post flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  committed JDBC Connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  aggressively releasing JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  returning connection to pool, pool size: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  connection already null in cleanup : no action
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  opened session at timestamp: 14410597171
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing method [beginTransaction] in non-transacted context
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  begin
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  opening JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  total checked-out connections: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  using pooled JDBC connection, pool size: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  current autocommit status: false
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction begin
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [save] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultSaveOrUpdateEventListener  saving transient instance
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  saving [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing insertions
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.WrapVisitor  Wrapped collection in role: dao.Categorie.produits
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractSaveEventListener  executing identity-insert immediately
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Inserting entity: dao.Categorie (native id)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     insert into CATEGORIE (CATEGORIE_TITRE, CATEGORIE_DESC, CATEGORIE_DATEAJOUT) values (?, ?, ?)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Dehydrating entity: [dao.Categorie#<null>]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'titre5' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  binding 'description5' to parameter: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.type.TimestampType  binding null to parameter: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.id.IdentifierGeneratorFactory  Natively generated identity: 5
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [getTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  commit
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  processing flush-time cascades
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  dirty checking collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushing entities and processing referenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.Collections  Collection found: [dao.Categorie.produits#5], was: [<unreferenced>] (initialized)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Processing unreferenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Scheduling collection removes/(re)creates/updates
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  listing entities:
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Categorie{idCategorie=5, produits=[], description=description5, dateAjout=null, titre=titre5}
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  executing flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush begin
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  Inserting collection: [dao.Categorie.produits#5]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.collection.AbstractCollectionPersister  collection was empty
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  registering flush end
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  post flush
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  before transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  committed JDBC Connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  aggressively releasing JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  returning connection to pool, pool size: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  after transaction completion
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  automatically closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  closing session
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  connection already null in cleanup : no action
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  opened session at timestamp: 14410597171
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing method [beginTransaction] in non-transacted context
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  begin
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.ConnectionManager  opening JDBC connection
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  total checked-out connections: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.connection.DriverManagerConnectionProvider  using pooled JDBC connection, pool size: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.transaction.JDBCTransaction  current autocommit status: false
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.JDBCContext  after transaction begin
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [load] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  loading entity: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  creating new proxy for entity
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  initializing proxy: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  attempting to resolve: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  object not resolved in any cache: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Fetching entity: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  loading entity: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     select categorie0_.ID_CATEGORIE as ID1_1_0_, categorie0_.CATEGORIE_TITRE as CATEGORIE2_1_0_, categorie0_.CATEGORIE_DESC as CATEGORIE3_1_0_, categorie0_.CATEGORIE_DATEAJOUT as CATEGORIE4_1_0_ from CATEGORIE categorie0_ where categorie0_.ID_CATEGORIE=?
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  binding '3' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open ResultSet (open ResultSets: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  processing result set
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  Initializing object from ResultSet: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Hydrating entity: [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'titre3' as column: CATEGORIE2_1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'description3' as column: CATEGORIE3_1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.TimestampType  returning null as column: CATEGORIE4_1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  done processing result set (1 rows)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close ResultSet (open ResultSets: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  total objects hydrated: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  resolving associations for [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.CollectionLoadContext  creating collection wrapper:[dao.Categorie.produits#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  done materializing entity [dao.Categorie#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.StatefulPersistenceContext  initializing non-lazy collections
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  done entity load
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [load] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  loading entity: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  creating new proxy for entity
+2015-09-01 00:21:57 DEBUG org.hibernate.impl.SessionImpl  initializing proxy: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  attempting to resolve: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultLoadEventListener  object not resolved in any cache: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Fetching entity: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  loading entity: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     select produit0_.id_prod as id1_0_0_, produit0_.PROD_NOM as PROD2_0_0_, produit0_.PROD_DESC as PROD3_0_0_, produit0_.DROD_PRIX as DROD4_0_0_ from PRODUITS produit0_ where produit0_.id_prod=?
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  binding '3' to parameter: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open ResultSet (open ResultSets: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  processing result set
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  Initializing object from ResultSet: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Hydrating entity: [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'nom3' as column: PROD2_0_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'description3' as column: PROD3_0_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.DoubleType  returning '900.0' as column: DROD4_0_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  done processing result set (1 rows)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close ResultSet (open ResultSets: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  total objects hydrated: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  resolving associations for [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  done materializing entity [dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.StatefulPersistenceContext  initializing non-lazy collections
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  done entity load
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [beginTransaction] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.context.ThreadLocalSessionContext  allowing proxied method [createQuery] to proceed to real session
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.query.QueryPlanCache  unable to locate HQL query plan in cache; generating (from Produit)
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.QueryTranslatorImpl  parse() - HQL: from dao.Produit
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.AST  --- HQL AST ---
+ \-[QUERY] 'query'
+    \-[SELECT_FROM] 'SELECT_FROM'
+       \-[FROM] 'from'
+          \-[RANGE] 'RANGE'
+             \-[DOT] '.'
+                +-[IDENT] 'dao'
+                \-[IDENT] 'Produit'
+
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.ErrorCounter  throwQueryException() : no errors
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.antlr.HqlSqlBaseWalker  select << begin [level=1, statement=select]
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.tree.FromElement  FromClause{level=1} :  dao.Produit (no alias) -> produit0_
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.antlr.HqlSqlBaseWalker  select : finishing up [level=1, statement=select]
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.HqlSqlWalker  processQuery() :  ( SELECT ( FromClause{level=1} PRODUITS produit0_ ) )
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.HqlSqlWalker  Derived SELECT clause created.
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.util.JoinProcessor  Using FROM fragment [PRODUITS produit0_]
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.antlr.HqlSqlBaseWalker  select >> end [level=1, statement=select]
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.AST  --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (PRODUITS)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'produit0_.id_prod as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=PRODUITS,tableAlias=produit0_,origin=null,colums={,className=dao.Produit}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'produit0_.PROD_NOM as PROD2_0_, produit0_.PROD_DESC as PROD3_0_, produit0_.DROD_PRIX as DROD4_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[produit0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'PRODUITS produit0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=PRODUITS,tableAlias=produit0_,origin=null,colums={,className=dao.Produit}}
+
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.ErrorCounter  throwQueryException() : no errors
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.QueryTranslatorImpl  HQL: from dao.Produit
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.QueryTranslatorImpl  SQL: select produit0_.id_prod as id1_0_, produit0_.PROD_NOM as PROD2_0_, produit0_.PROD_DESC as PROD3_0_, produit0_.DROD_PRIX as DROD4_0_ from PRODUITS produit0_
+2015-09-01 00:21:57 DEBUG org.hibernate.hql.ast.ErrorCounter  throwQueryException() : no errors
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.query.HQLQueryPlan  HQL param location recognition took 1 mills (from Produit)
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.query.QueryPlanCache  located HQL query plan in cache (from Produit)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  flushing session
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  processing flush-time cascades
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  dirty checking collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushing entities and processing referenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.Collections  Collection found: [dao.Categorie.produits#3], was: [dao.Categorie.produits#3] (uninitialized)
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Processing unreferenced collections
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Scheduling collection removes/(re)creates/updates
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.AbstractFlushingEventListener  Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  listing entities:
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Produit{prix=900.0, description=description3, idProduit=3, nom=nom3}
+2015-09-01 00:21:57 DEBUG org.hibernate.pretty.Printer  dao.Categorie{idCategorie=3, produits=<uninitialized>, description=description3, dateAjout=null, titre=titre3}
+2015-09-01 00:21:57 DEBUG org.hibernate.event.def.DefaultAutoFlushEventListener  Dont need to execute flush
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.query.HQLQueryPlan  find: from Produit
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.QueryParameters  named parameters: {}
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.SQL     select produit0_.id_prod as id1_0_, produit0_.PROD_NOM as PROD2_0_, produit0_.PROD_DESC as PROD3_0_, produit0_.DROD_PRIX as DROD4_0_ from PRODUITS produit0_
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  preparing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to open ResultSet (open ResultSets: 0, globally: 0)
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  processing result set
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 0
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  returning '1' as column: id1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Produit#1]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  Initializing object from ResultSet: [dao.Produit#1]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Hydrating entity: [dao.Produit#1]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'nom1' as column: PROD2_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'description1' as column: PROD3_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.DoubleType  returning '700.0' as column: DROD4_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 1
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  returning '2' as column: id1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Produit#2]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  Initializing object from ResultSet: [dao.Produit#2]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Hydrating entity: [dao.Produit#2]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'nom2' as column: PROD2_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'description2' as column: PROD3_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.DoubleType  returning '800.0' as column: DROD4_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 2
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  returning '3' as column: id1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Produit#3]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 3
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  returning '4' as column: id1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Produit#4]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  Initializing object from ResultSet: [dao.Produit#4]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Hydrating entity: [dao.Produit#4]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'nom4' as column: PROD2_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'description4' as column: PROD3_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.DoubleType  returning '600.0' as column: DROD4_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result set row: 4
+2015-09-01 00:21:57 DEBUG org.hibernate.type.LongType  returning '5' as column: id1_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  result row: EntityKey[dao.Produit#5]
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  Initializing object from ResultSet: [dao.Produit#5]
+2015-09-01 00:21:57 DEBUG org.hibernate.persister.entity.AbstractEntityPersister  Hydrating entity: [dao.Produit#5]
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'nom5' as column: PROD2_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.StringType  returning 'description5' as column: PROD3_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.type.DoubleType  returning '500.0' as column: DROD4_0_
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  done processing result set (5 rows)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close ResultSet (open ResultSets: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2015-09-01 00:21:57 DEBUG org.hibernate.jdbc.AbstractBatcher  closing statement
+2015-09-01 00:21:57 DEBUG org.hibernate.loader.Loader  total objects hydrated: 4
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  resolving associations for [dao.Produit#1]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  done materializing entity [dao.Produit#1]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  resolving associations for [dao.Produit#2]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  done materializing entity [dao.Produit#2]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  resolving associations for [dao.Produit#4]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  done materializing entity [dao.Produit#4]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  resolving associations for [dao.Produit#5]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.TwoPhaseLoad  done materializing entity [dao.Produit#5]
+2015-09-01 00:21:57 DEBUG org.hibernate.engine.StatefulPersistenceContext  initializing non-lazy collections

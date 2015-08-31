@@ -1,0 +1,575 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 29 16:21:22 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>474</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.util.XMLHelper category">org.hibernate.util.XMLHelper</td>
+<td title="Message">Error parsing XML: XML InputStream(18) Contenu non autorisé dans la section de fin.</td>
+</tr>
+
+<tr>
+<td>480</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.cfg.Configuration category">org.hibernate.cfg.Configuration</td>
+<td title="Message">Could not configure datastore from input stream</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.dom4j.DocumentException: Error on line 18 of document  : Contenu non autorisé dans la section de fin. Nested exception: Contenu non autorisé dans la section de fin.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.dom4j.io.SAXReader.read(SAXReader.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.addInputStream(Configuration.java:398)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.addResource(Configuration.java:449)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:1263)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:1235)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:1217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:1184)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.configure(Configuration.java:1112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.configure(Configuration.java:1098)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:9)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Nested exception: 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 1; Contenu non autorisé dans la section de fin.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.addInputStream(Configuration.java:398)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.addResource(Configuration.java:449)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:1263)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:1235)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:1217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:1184)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.configure(Configuration.java:1112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.configure(Configuration.java:1098)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:9)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Aug 30 19:15:33 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>3926</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">schema export unsuccessful</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Unable to connect to any hosts due to exception: java.net.ConnectException: Connection refused: connect
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:124)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:225)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1779)
+	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+	at dao.Services.addProduit(Services.java:28)
+	at Test.main(Test.java:9)
+
+
+** END NESTED EXCEPTION **
+
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1847)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:9)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Aug 30 19:55:00 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2533</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">schema export unsuccessful</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Unable to connect to any hosts due to exception: java.net.ConnectException: Connection refused: connect
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:124)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:225)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1779)
+	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+	at dao.Services.addProduit(Services.java:28)
+	at Test.main(Test.java:8)
+
+
+** END NESTED EXCEPTION **
+
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1847)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:8)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Aug 30 20:00:16 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2553</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">schema export unsuccessful</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Unable to connect to any hosts due to exception: java.net.ConnectException: Connection refused: connect
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:124)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:225)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1779)
+	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+	at dao.Services.addProduit(Services.java:28)
+	at Test.main(Test.java:8)
+
+
+** END NESTED EXCEPTION **
+
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1847)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:8)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Aug 30 20:08:52 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2525</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">schema export unsuccessful</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Unable to connect to any hosts due to exception: java.net.ConnectException: Connection refused: connect
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:124)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:225)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1779)
+	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+	at dao.Services.addProduit(Services.java:28)
+	at Test.main(Test.java:9)
+
+
+** END NESTED EXCEPTION **
+
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1847)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:9)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Aug 30 20:10:04 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>586</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">schema export unsuccessful</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Syntax error or access violation message from server: "Unknown database 'gestprod66'"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1997)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1906)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:2520)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:817)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1782)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport$ProviderConnectionHelper.getConnection(SchemaExport.java:432)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:130)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.impl.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:264)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1005)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:15)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at dao.Services.addProduit(Services.java:28)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at Test.main(Test.java:9)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Sep 01 00:21:50 CEST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>902</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Unsuccessful: create table CATEGORIE (ID_CATEGORIE bigint not null auto_increment, CATEGORIE_TITRE varchar(255), CATEGORIE_DESC varchar(255), CATEGORIE_DATEAJOUT datetime, primary key (ID_CATEGORIE))</td>
+</tr>
+
+<tr>
+<td>903</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Table 'categorie' already exists</td>
+</tr>
+
+<tr>
+<td>905</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Unsuccessful: create table CAT_PROD (ID_CATEGORIE bigint not null, ID_PRODUIT bigint not null, primary key (ID_CATEGORIE, ID_PRODUIT))</td>
+</tr>
+
+<tr>
+<td>905</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Table 'cat_prod' already exists</td>
+</tr>
+
+<tr>
+<td>908</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Unsuccessful: create table PRODUITS (id_prod bigint not null auto_increment, PROD_NOM varchar(255), PROD_DESC varchar(255), DROD_PRIX double precision, primary key (id_prod))</td>
+</tr>
+
+<tr>
+<td>908</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Table 'produits' already exists</td>
+</tr>
+
+<tr>
+<td>915</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Unsuccessful: alter table CAT_PROD add index FK331B3240B4698CCE (ID_CATEGORIE), add constraint FK331B3240B4698CCE foreign key (ID_CATEGORIE) references CATEGORIE (ID_CATEGORIE)</td>
+</tr>
+
+<tr>
+<td>916</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Syntax error or access violation message from server: "Duplicate key name 'FK331B3240B4698CCE'"</td>
+</tr>
+
+<tr>
+<td>949</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Unsuccessful: alter table CAT_PROD add index FK331B3240950A7DB2 (ID_PRODUIT), add constraint FK331B3240950A7DB2 foreign key (ID_PRODUIT) references PRODUITS (id_prod)</td>
+</tr>
+
+<tr>
+<td>949</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.hibernate.tool.hbm2ddl.SchemaExport category">org.hibernate.tool.hbm2ddl.SchemaExport</td>
+<td title="Message">Syntax error or access violation message from server: "Duplicate key name 'FK331B3240950A7DB2'"</td>
+</tr>
