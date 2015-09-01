@@ -5,13 +5,19 @@
 <hibernate-mapping>
  	<class name="dao.Produit" table="PRODUITS"> 
  		
- 		<id name="idProduit" column="id_prod">
+ 		<id name="idProduit" column="ID_PRODUIT">
  		<generator class="native"></generator>
  		</id>
  		
  		<property  name="nom"		  column="PROD_NOM"  />
  		<property  name="description" column="PROD_DESC" />
  		<property  name="prix" 		  column="DROD_PRIX" />
+ 				   
+ 		<set name="categories" table="CAT_PROD" inverse="true" lazy="false">
+			<key column="ID_PRODUIT"></key>
+			<many-to-many class="dao.Categorie" column="ID_CATEGORIE"></many-to-many>
+ 		</set>
+ 		
  		
  	 </class>
 </hibernate-mapping>

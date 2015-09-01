@@ -50,14 +50,6 @@ public class Services {
 
 	}
 
-	public Categorie getCategorie(Long idC) {
-
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		Categorie p = (Categorie) session.load(Categorie.class, idC);
-		return p;
-
-	}
 
 	public void addProduitToCategorie(Long idP, Long idC) {
 
@@ -66,7 +58,17 @@ public class Services {
 		Produit p = (Produit) session.load(Produit.class, idP);
 		Categorie c = (Categorie) session.load(Categorie.class, idC);
 		c.getProduits().add(p);
+		p.getCategories().add(c);
 		session.getTransaction().commit();
+
+	}
+
+	public Categorie getCategorie(Long idC) {
+
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		Categorie p = (Categorie) session.load(Categorie.class, idC);
+		return p;
 
 	}
 

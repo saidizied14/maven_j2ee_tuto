@@ -1,8 +1,11 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
+
 import dao.*;
 public class Test {
 
@@ -62,9 +65,50 @@ public class Test {
 			i++;
 			
 		}
-		
-		
+				
 		//affectation
+	    System.out.println("Affectation1 :");
+	    s.addProduitToCategorie(1L, 1L);
+		s.addProduitToCategorie(3L, 1L);
+		s.addProduitToCategorie(2L, 1L);
+		s.addProduitToCategorie(2L, 5L);
+		s.addProduitToCategorie(1L, 1L);
+		s.addProduitToCategorie(3L, 2L);
+		s.addProduitToCategorie(2L, 2L);
+		s.addProduitToCategorie(2L, 5L);
+
+		Categorie catt = s.getCategorie(new Long(2));
+		System.out.println("l'info de cat");
+		catt.show();
+		System.out.println("les prods de cat");
+		List<Produit> produitsdeCat =  new ArrayList<Produit>(catt.getProduits()) ;
+		System.out.println("La liste des produit :");
+		int j=0 ;
+		while ( produitsdeCat.size()>j){
+			Produit produit2 = produitsdeCat.get(j);
+			produit2.show();
+			j++;		
+			
+		}
+		
+		Produit produit = s.getProduit(new Long(2));
+		System.out.println("l'info de prod");
+		catt.show();
+		System.out.println("les cat de prod");
+		List<Categorie> catsdeprod =  new ArrayList<Categorie>(produit.getCategories()) ;
+		System.out.println("La liste des categorie :");
+		int k=0 ;
+		while ( catsdeprod.size()>k){
+			Categorie cat2 = catsdeprod.get(k);
+			cat2.show();
+			k++;		
+			
+		}
+	
+		
+		
+		
+		
 		
 		
 		

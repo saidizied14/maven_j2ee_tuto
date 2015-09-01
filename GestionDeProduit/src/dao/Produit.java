@@ -1,6 +1,7 @@
 package dao;
 
-
+import java.util.HashSet;
+import java.util.Set;
 public class Produit {
 // Les parametres
 // L'id avec les framework dois etre de type Classe comme exemple Long et pas long
@@ -8,6 +9,15 @@ private Long idProduit ;
 private String nom ;
 private String description ;
 private Double prix ;
+private Set<Categorie> categories = new HashSet<Categorie>();
+
+public Set<Categorie> getCategories() {
+	return categories;
+}
+
+public void setCategories(Set<Categorie> categories) {
+	this.categories = categories;
+}
 
 //constructeur
 public Produit() {
